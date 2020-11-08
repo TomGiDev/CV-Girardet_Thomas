@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<!-- Meta tag requis -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap et CSS -->
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+
+	<title>Thomas GIRARDET, Développeur Web Junior</title>
+</head>
+
+<body>
+	<!-- LISERET et MENU -->
+	<header>
+		<div class="liseret">
+			<nav>
+				<ul>
+					<li class="liNav" id="liNav0">
+						<a href="#entete" onclick="openPage('profil'); return false;"><img class="navBut" id="photoMin" src="profil.jpg" title="Informations Personnelles" alt="Informations Personnelles">
+						</a>
+					</li>
+					<li class="liNav" id="liNav1">
+						<a href="#entete" onclick="openPage('profil'); return false;"><img class="navBut" id="profilOpen" src="menu/profilClose.png" title="Informations Personnelles"alt="Informations Personnelles">
+						</a>
+					</li>
+					<li class="liNav" id="liNav2">
+						<a href="#expPro" onclick="openPage('expPro'); return false;"><img class="navBut" id="expProOpen" src="menu/expProClose.png" title="Expériences Professionnelles" alt="Expériences Professionnelles">
+						</a>
+					</li>
+					<li class="liNav" id="liNav3">
+						<a href="#formPro" onclick="openPage('formPro'); return false;"><img class="navBut" id="formProOpen" src="menu/formProClose.png" title="Formations" alt="Formations">
+						</a>
+					</li>
+					<li class="liNav" id="liNav4">
+						<a href="#comp" onclick="openPage('comp'); return false;"><img class="navBut" id="compOpen" src="menu/compClose.png" title="Compétences" alt="Compétences">
+						</a>
+					</li>
+					<li class="liNav" id="liNav5">
+						<a href="#projPerso" onclick="openPage('projPerso'); return false;"><img class="navBut" id="projPersoOpen" src="menu/projPersoClose.png" title="Pojets personnels" alt="Pojets personnels">
+						</a>
+					</li>
+					<li class="liNav" id="liNav6">
+						<a href="#hob" onclick="openPage('hob'); return false;"><img class="navBut" id="hobOpen" src="menu/hobClose.png" title="Hobbies" alt="Hobbies">
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<!-- FIN = LISERET et MENU -->
+
+	<!-- CONTENAIRE -->
+	<main>
+		<!-- MAIN PROFIL -->
+		<section class="open" id="profil">
+			<div class="entete" id="entete">
+					<h1 class="auteur"><strong>THOMAS GIRARDET</strong></h1>
+					<h2 class="metier"><strong>Développeur Web Junior</strong></h2>
+			</div>
+			<div class="recherche">
+				<p>
+						Je recherche une entreprise pour poursuivre ma reconversion professionnelle.
+						<br>
+						Objectifs : développer mes compétences avec de l'alternance (24 mois)
+						<br>
+						Secteur Rennes - Laval, 4 jours en entreprise pour 1 à domicile.
+						<br>
+						Apétance pour le front-end et l'expérience utilisateur.
+				</p>
+			</div>
+
+			<div class="sectionTitre">
+				<h3 class="section">Informations personnelles</h3>
+			</div>
+			<section class="profilDet">
+				<article class="infoPerso">
+					<p>
+						<i class="fa fa-address-card" aria-hidden="true"></i> : 10, rue du Docteur Lebreton 35680 BAIS
+					</p>
+					<p>
+						<i class="fa fa-2x fa-mobile" aria-hidden="true"></i> : 06.89.21.57.71
+					</p>
+					<p>
+						<i class="fa fa-envelope" aria-hidden="true"></i> : <a href="mailto:thomas.girardet@orange.fr">thomas.girardet@orange.fr</a>
+					</p>
+					<p>
+						<i class="fa fa-birthday-cake" aria-hidden="true"></i> : 24/08/1983
+					</p>
+					<p>
+						<i class="fa fa-car" aria-hidden="true"></i> : A et B, véhiculé.
+					</p>
+				</article>
+				<aside id="photoMax">
+					<p class="photoMax">
+						<img src="profil.jpg" title="Thomas GIRARDET" alt="Thomas GIRARDET">
+					</p>
+				</aside>
+			</section>
+		</section>
+		<!-- FIN = MAIN PROFIL -->
+
+		<!-- MAIN EXPERIENCE PROFESSIONNELLE -->
+		<section class="open" id="expPro">
+			<div class="sectionTitre">
+				<h3 class="section">Expériences Professionnelles</h3>
+			</div>
+			<section class="expProDet">
+				<article>
+					<p class="titreMax">Stagiaire Développeur web</p>
+					<p class="titreMin">Stagiaire Développeur web,
+						<br>12/2019-01/2020</p>
+					<p class="societe">
+						<a href="https://jcp-connect.com/" target="_blank" title="Jcp-Connect" alt="Jcp-Connect">Société JCP-Connect</a>, Cesson-Sévigné(35).
+					</p>
+					<p class="description">
+						- Ajout de fonctionnalités sur une application web en PHP Laravel,<br>
+						- Mise en cohérence de la base de données sous SQLite,<br>
+						- Adaptation du frontend via HTML5, CSS, Boostrap et Jquery,<br>
+						- Utilisation de Github via Bitbucket.
+					</p>
+				</article>
+				<aside class="expProAnnee">
+					<p id="expProVide1"></p>
+					<p class="annee">
+						12/2019 – 01/2020
+					</p>
+				</aside>
+			</section>
+
+			<section class="expProDet">
+				<article>
+					<p class="titreMax">Projets informatiques développés</p>
+					<p class="titreMin">Projets informatiques développés,
+						<br>07/2019-11/2019</p>
+					<p class="societe"><a href="https://www.eni-ecole.fr/" target="_blank" title="ENI Ecole informatique" alt="ENI Ecole informatique">ENI Ecole Informatique</a></p>
+					<p class="description">
+						- Développement d’un site d’enchères sous Java EE et SQLServer,<br>
+						- Analyse, conception et développement d’un site de sorties avec php symfony et MySQL.
+					</p>
+				</article>
+				<aside class="expProAnnee">
+					<p id="expProVide2"></p>
+					<p class="annee">
+						07/2019 – 11/2019
+					</p>
+				</aside>
+			</section>
+
+			<section class="expProDet">
+				<article>
+					<p class="titreMax">Conseiller de clientèle</p>
+					<p class="titreMin">Conseiller de clientèle,
+						<br>09/2015-06/2019</p>
+					<p class="societe"><a href="https://www.webhelp.com/" target="_blank" title="Webhelp" alt="Webhelp">Webhelp</a>, Etrelles(35).</p>
+					<p class="description">
+						- Assurer le suivi de clientèle, les demandes d'information et l’accompagnement,<br>
+						- Adaptation aux profils clients,<br>
+						- Analyse des besoins, identification et proposition d’une solution adaptée à leurs attentes.
+					</p>
+				</article>
+				<aside class="expProAnnee">
+					<p id="expProVide3"></p>
+					<p class="annee">
+						09/2015 – 06/2019
+					</p>
+				</aside>
+			</section>
+
+			<section class="expProDet">
+				<article>
+					<p class="titreMax">Métiers de la logistique</p>
+					<p class="titreMin">Métiers de la logistique,
+						<br>2012-2015</p>
+					<p class="societe">Diverses entreprises</p>
+				</article>
+				<aside class="expProAnnee">
+					<p id="expProVide4"></p>
+					<p class="annee">
+						2012 – 2015
+					</p>
+				</aside>
+			</section>
+
+			<section class="expProDet">
+				<article>
+					<p class="titreMax">Stagiaire conduite de projet</p>
+					<p class="titreMin">Stagiaire conduite de projet,
+						<br>11/2011-05/2012</p>
+					<p class="societe">Mairie de La Fresnais(35), Communauté de Commune de Rance Frémur(22)</p>
+					</p>
+				</article>
+				<aside class="expProAnnee">
+					<p id="expProVide5"></p>
+					<p class="annee">
+						11/2011 – 05/2012
+					</p>
+				</aside>
+			</section>
+
+			<section class="expProDet">
+				<article>
+					<p class="titreMax">Technicien Sites et Sols Pollués</p>
+					<p class="titreMin">Technicien Sites et Sols Pollués,
+						<br>04/2008-12/2010</p>
+					<p class="societe"><a href="https://www.idra-environnement.com/" target="_blank" title="Idra Environnement" alt="Idra Environnement">Idra Environnement</a> (35), <a href="https://inovadia.com/" target="_blank" title="Inovadia" alt="Inovadia">Inovadia</a> (35), <a href="https://www.serea.fr/" target="_blank" title="Serea" alt="Serea">Serea</a> (44).</p>
+				</article>
+			<aside class="expProAnnee">
+				<p id="expProVide6"></p>
+				<p class="annee">
+					04/2008 – 12/2010
+				</p>
+			</aside>
+			</section>
+
+			<section class="expProDet">
+				<article>
+					<p class="titreMax">Métiers de la logistique</p>
+					<p class="titreMin">Métiers de la logistique,
+						<br>2006-2008</p>
+					<p class="societe">Diverses entreprises</p>
+				</article>
+				<aside class="expProAnnee">
+					<p id="expProVide7"></p>
+					<p class="annee">
+						2006 – 2008
+					</p>
+				</aside>
+			</section>
+
+			<section class="expProDet">
+				<article>
+					<p class="titreMax">Apprenti en alternance</p>
+					<p class="titreMin">Apprenti en alternance,
+						<br>2004-2006</p>
+					<p class="societe"><a href="https://www.eptb-vilaine.fr/" target="_blank" title="Institution d’Aménagement de la Vilaine" alt="Institution d’Aménagement de la Vilaine">Institution d’Aménagement de la Vilaine</a> (35).</p>
+				</article>
+				<aside class="expProAnnee">
+					<p id="expProVide8"></p>
+					<p class="annee">
+						2004 – 2006
+					</p>
+				</aside>
+			</section>
+		</section>
+		<!-- FIN = MAIN EXPERIENCE PROFESSIONNELLE -->
+
+		<!-- MAIN FORMATION PROFESSIONNELLE -->
+		<section class="open" id="formPro">
+			<div class="sectionTitre">
+				<h3 class="section">Formations</h3>
+			</div>
+			<section class="formProDet">
+				<article>
+					<p class="titreMax">Développeur Web et Web Mobile</p>
+					<p class="titreMin">Développeur Web et Web Mobile,
+						<br>07/2019-11/2019</p>
+					<p class="societe">ENI Ecole Informatique, Saint-Herblain (44)</p>
+				</article>
+				<aside class="formProAnnee">
+					<p id="formProVide1"></p>
+					<p class="annee">
+						07/2019 – 11/2019
+					</p>
+				</aside>
+			</section>
+
+			<section class="formProDet">
+				<article>
+					<p class="titreMax">Conduite de Projet et Développement Durable (titre niveau II)</p>
+					<p class="titreMin">Conduite de Projet et Développement Durable (titre niveau II),
+						<br>2011-2012</p>
+					<p class="societe">CPSA de Combourg, Combourg (35)</p>
+				</article>
+			<aside class="formProAnnee">
+				<p id="formProVide2"></p>
+				<p class="annee">
+					2011 – 2012
+				</p>
+			</aside>
+			</section>
+			
+			<section class="formProDet">
+				<article>
+					<p class="titreMax">Licence Professionnelle «Gestion et Traitement des Sols et des Eaux»</p>
+					<p class="titreMin">Licence Professionnelle «Gestion et Traitement des Sols et des Eaux»,
+						<br>2007-2008</p>
+					<p class="societe">Institut Biologique et d’Ecologie Appliquée, Angers (49)</p>
+				</article>
+				<aside class="formProAnnee">
+					<p id="formProVide3"></p>
+					<p class="annee">
+						2007 – 2008
+					</p>
+				</aside>
+			</section>
+			
+			<section class="formProDet">
+				<article>
+					<p class="titreMax">BTSA «Gestion des Espaces Naturels» par alternance</p>
+					<p class="titreMin">BTSA «Gestion des Espaces Naturel» par alternance,
+						<br>2004-2006</p>
+					<p class="societe">MFR Les Forges, La Ferté Bernard (72)</p>
+				</article>
+				<aside class="formProAnnee">
+					<p id="formProVide4"></p>
+					<p class="annee">
+						2004 – 2006
+					</p>
+				</aside>
+			</section>
+			
+			<section class="formProDet">
+				<article>
+					<p class="titreMax">DEUG 1 «Maths et Informatique Appliquées aux Sciences»</p>
+					<p class="titreMin">DEUG 1 «Maths et Informatique Appliquées aux Sciences»,
+						<br>2002-2004</p>
+					<p class="societe">Facultés des Sciences, Nantes (44)</p>
+				</article>
+				<aside class="formProAnnee">
+					<p id="formProVide5"></p>
+					<p class="annee">
+						2002 – 2004
+					</p>
+				</aside>
+			</section>
+		</section>
+		<!-- FIN = MAIN FORMATION PROFESSIONNELLE -->
+
+		<!-- MAIN COMPETENCE -->
+		<section class="open" id="comp">
+			<div class="sectionTitre">
+				<h3 class="section">Compétences</h3>
+			</div>
+			<article id="compDet">
+				<p class="description">
+					<strong>Langages :</strong> Java, PHP 7, HTML 5, CSS, Javascript.
+				</p>
+				<p class="description">
+					<strong>Environnements :</strong> Eclipse, Netbeans, Visual Studio Code, DBWorkBench.
+				</p>
+				<p class="description">
+					<strong>Plateformes / Framework :</strong> Java SE et EE (Tomcat), Symfony3 (Wamp ou Lamp), Laravel 5.8 (SQLite), Boostrap, Jquery.
+				</p>
+				<p class="description">
+					<strong>ORM :</strong> Doctrine et Eloquent.
+				</p>
+				<p class="description">
+					<strong>Méthodes :</strong> Modélisation des données, Méthode de développement Agile (SCRUM),  UML (Unified Modeling Language).
+				</p>
+				<p class="description">
+					<strong>Bases de données :</strong> SQLServer, Oracle, MySQL, SQLite.
+				</p>
+			</article>
+		</section>
+		<!-- FIN = MAIN COMPETENCE -->
+
+		<!-- MAIN PROJETS PERSOS -->
+		<section class="open" id="projPerso">
+			<div class="sectionTitre">
+				<h3 class="section">Projets personnels</h3>
+			</div>
+			<article id="projPersoDet">
+				<p class="description">
+					<strong>Mon Curriculum Vitae :</strong>
+					<br> 
+					<ol class="description">
+						<li class="liProj">Réalisation d'un site pour présenter mon curiculum vitae d'une manière interactive.
+						</li>
+						<li class="liProj">Langages standard pour le front-end : html 5, CSS 3, Javascript.
+						</li>
+					</ol>
+				</p>
+			</article>
+			<article id="projPersoDet">
+				<p class="description">
+					<strong>Mieux Organiser sa Sortie :</strong>
+					<br> 
+					<ol class="description">
+						<li class="liProj">Réalisation d'un site pour organiser ses sorties familiales/amicales en prenant en compte la localisation des membres du groupe créé.
+						</li>
+						<li class="liProj">Site en cours de réalisation.
+						</li>
+						<li class="liProj">Langages standard pour le front-end (html 5, CSS 3, Bootstrap 4, Javascript), java pour le back-end et MySQL pour la base de donnée.
+						</li>
+					</ol>
+				</p>
+			</article>
+		</section>
+		<!-- FIN = MAIN PROJETS PERSOS -->
+
+		<!-- MAIN HOBBIES -->
+		<section class="open" id="hob">
+			<div class="sectionTitre">
+				<h3 class="section">Hobbies</h3>
+			</div>
+			<section class="hobDet">
+				<article>
+					<ul>
+						<li class="liHob" id="liHob1">
+							Flûte traversière
+						</li>
+						<li class="liHob" id="liHob2">
+							VTT
+						</li>
+						<li class="liHob" id="liHob3">
+							Voyages : Espagne, Pays-Bas, Angleterre, Jersey, Québec.
+						</li>
+						<li class="liHob" id="liHob4">
+							Randonnées
+						</li>
+						<li class="liHob" id="liHob5">
+							Lecture : science-fiction, roman, revues scientifiques, manga, bandes dessinées, etc.
+						</li>
+						<li class="liHob" id="liHob6">
+							Organisation de deux Éditions du "Salon du Bien Être", à Vitré (35)
+						</li>
+					</ul>
+				</article>
+				<aside class="displayImg">
+					<img src="gif/image.jpeg" id="imageGif">
+				</aside>
+			</section>
+		</section>
+		<!-- FIN = MAIN HOBBIES -->
+	</main>
+	<!-- FIN = CONTENAIRE -->
+
+	<footer>
+		<p>Copyright <img src="footer/copyright.png" id="copyright"> - Thomas GIRARDET<br/>
+			<a href="mailto:thomas.girardet@orange.fr" title="Contactez-moi" alt="Contactez moi"><img src="footer/mail.png" id="mail"></a>
+			<a href="https://www.linkedin.com/in/thomas-girardet-67881b8a/" target="_blank" title="Profil sur LinkedIn" alt="Profil sur LinkedIn"><img src="footer/linkedin.png" id="linkedin"></a>
+			<a href="footer/Thomas_GIRARDET-Développeur_Web_Junior.pdf" download title="CV en format pdf" alt="CV en format pdf"><img src="footer/telecharger.png" id="cvPdf"></a>
+		</p>
+	</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+
+<!-- Partie Navigation -->
+<script>
+
+	// ANIMATION DES SECTIONS POUR OUVERTURE
+	function openPage(page) {
+        // suppression class open à toutes les sections de main remplacée par la classe close
+        var allsections = document.querySelectorAll("main > section");
+        for (var i = 0; i < allsections.length; ++i) { 
+            allsections[i].classList.remove('open');
+			allsections[i].classList.add('close');
+        }
+        // ajout de la classe open à la page
+        document.getElementById(page).classList.add('open');
+		document.getElementById(page).classList.remove('close');
+        return false; 
+    }
+
+	// ANIMATION DES SECTIONS POUR FERMETURE
+	function closePage(page) {
+        // suppression class open à toutes les sections de main remplacée par la classe close
+        var allsections = document.querySelectorAll("main > section");
+        for (var i = 0; i < allsections.length; ++i) { 
+			allsections[i].classList.remove('close');
+			allsections[i].classList.add('open');
+        }
+        // ajout de la classe close à la page
+		document.getElementById(page).classList.add('close');
+		document.getElementById(page).classList.remove('open');
+        return false; 
+    }
+
+    // Bouton profil MIN
+	document.getElementById("liNav0").addEventListener("click",function(){
+	document.getElementById("profil").style='display:block';
+	document.getElementById("photoMin").src='profil.jpg';
+	document.getElementById("photoMin").style='box-shadow: 0px 0px 30px black';
+
+	document.getElementById("expPro").style='display:none';
+	document.getElementById("expProOpen").src='menu/expProClose.png';
+	document.getElementById("expProOpen").removeAttribute("style", "box-shadow");
+
+	document.getElementById("formPro").style='display:none';
+	document.getElementById("formProOpen").src='menu/formProClose.png';
+	document.getElementById("formProOpen").removeAttribute("style", "box-shadow");
+
+	document.getElementById("comp").style='display:none';
+	document.getElementById("compOpen").src='menu/compClose.png';
+	document.getElementById("compOpen").removeAttribute("style", "box-shadow");
+
+	document.getElementById("projPerso").style='display:none';
+	document.getElementById("projPersoOpen").src='menu/projPersoClose.png';
+	document.getElementById("projPersoOpen").removeAttribute("style", "box-shadow");
+
+	document.getElementById("hob").style='display:none';
+	document.getElementById("hobOpen").src='menu/hobClose.png';
+	document.getElementById("hobOpen").removeAttribute("style", "box-shadow");
+	},false);
+
+	// Bouton profil MAX
+	document.getElementById("liNav1").addEventListener("click",function(){
+	document.getElementById("profil").style='display:block';
+	document.getElementById("profilOpen").src='menu/profilOpen.png';
+	document.getElementById("profilOpen").style='box-shadow: 0px 0px 30px black';
+
+	document.getElementById("expPro").style='display:none';
+	document.getElementById("expProOpen").src='menu/expProClose.png';
+	document.getElementById("expProOpen").removeAttribute("style", "box-shadow");
+
+	document.getElementById("formPro").style='display:none';
+	document.getElementById("formProOpen").src='menu/formProClose.png';
+	document.getElementById("formProOpen").removeAttribute("style", "box-shadow");
+
+	document.getElementById("comp").style='display:none';
+	document.getElementById("compOpen").src='menu/compClose.png';
+	document.getElementById("compOpen").removeAttribute("style", "box-shadow");
+
+	document.getElementById("projPerso").style='display:none';
+	document.getElementById("projPersoOpen").src='menu/projPersoClose.png';
+	document.getElementById("projPersoOpen").removeAttribute("style", "box-shadow");
+
+	document.getElementById("hob").style='display:none';
+	document.getElementById("hobOpen").src='menu/hobClose.png';
+	document.getElementById("hobOpen").removeAttribute("style", "box-shadow");
+	},false);
+
+	// Bouton expPro
+	document.getElementById("liNav2").addEventListener("click",function(){
+	document.getElementById("profil").style='display:none';
+	document.getElementById("photoMin").src='menu/profilClose.png';
+	document.getElementById("photoMin").removeAttribute("style", "box-shadow");
+
+	document.getElementById("profilOpen").src='menu/profilClose.png';
+	document.getElementById("profilOpen").removeAttribute("style", "box-shadow");
+
+
+	document.getElementById("expPro").style='display:block';
+	document.getElementById("expProOpen").src='menu/expProOpen.png';
+	document.getElementById("expProOpen").style='box-shadow: 0px 0px 30px black';
+
+	document.getElementById("formPro").style='display:none';
+	document.getElementById("formProOpen").src='menu/formProClose.png';
+	document.getElementById("formProOpen").removeAttribute("style", "box-shadow");
+
+	document.getElementById("comp").style='display:none';
+	document.getElementById("compOpen").src='menu/compClose.png';
+	document.getElementById("compOpen").removeAttribute("style", "box-shadow");
+
+	document.getElementById("projPerso").style='display:none';
+	document.getElementById("projPersoOpen").src='menu/projPersoClose.png';
+	document.getElementById("projPersoOpen").removeAttribute("style", "box-shadow");
+
+	document.getElementById("hob").style='display:none';
+	document.getElementById("hobOpen").src='menu/hobClose.png';
+	document.getElementById("hobOpen").removeAttribute("style", "box-shadow");
+	},false);
+
+	// Bouton formPro
+	document.getElementById("liNav3").addEventListener("click",function(){
+	document.getElementById("profil").style='display:none';
+	document.getElementById("photoMin").src='menu/profilClose.png';
+	document.getElementById("photoMin").removeAttribute("style", "box-shadow");
+
+	document.getElementById("profilOpen").src='menu/profilClose.png';
+	document.getElementById("profilOpen").removeAttribute("style", "box-shadow");
+
+	document.getElementById("expPro").style='display:none';
+	document.getElementById("expProOpen").src='menu/expProClose.png';
+	document.getElementById("expProOpen").removeAttribute("style", "box-shadow");
+
+	document.getElementById("formPro").style='display:block';
+	document.getElementById("formProOpen").src='menu/formProOpen.png';
+	document.getElementById("formProOpen").style='box-shadow: 0px 0px 30px black';
+
+	document.getElementById("comp").style='display:none';
+	document.getElementById("compOpen").src='menu/compClose.png';
+	document.getElementById("compOpen").removeAttribute("style", "box-shadow");
+
+	document.getElementById("projPerso").style='display:none';
+	document.getElementById("projPersoOpen").src='menu/projPersoClose.png';
+	document.getElementById("projPersoOpen").removeAttribute("style", "box-shadow");
+
+	document.getElementById("hob").style='display:none';
+	document.getElementById("hobOpen").src='menu/hobClose.png';
+	document.getElementById("hobOpen").removeAttribute("style", "box-shadow");
+	},false);
+
+	// Bouton comp
+	document.getElementById("liNav4").addEventListener("click",function(){
+	document.getElementById("profil").style='display:none';
+	document.getElementById("photoMin").src='menu/profilClose.png';
+	document.getElementById("photoMin").removeAttribute("style", "box-shadow");
+
+	document.getElementById("profilOpen").src='menu/profilClose.png';
+	document.getElementById("profilOpen").removeAttribute("style", "box-shadow");
+
+	document.getElementById("expPro").style='display:none';
+	document.getElementById("expProOpen").src='menu/expProClose.png';
+	document.getElementById("expProOpen").removeAttribute("style", "box-shadow");
+
+	document.getElementById("formPro").style='display:none';
+	document.getElementById("formProOpen").src='menu/formProClose.png';
+	document.getElementById("formProOpen").removeAttribute("style", "box-shadow");
+
+	document.getElementById("comp").style='display:block';
+	document.getElementById("compOpen").src='menu/compOpen.png';
+	document.getElementById("compOpen").style='box-shadow: 0px 0px 30px black';
+
+	document.getElementById("projPerso").style='display:none';
+	document.getElementById("projPersoOpen").src='menu/projPersoClose.png';
+	document.getElementById("projPersoOpen").removeAttribute("style", "box-shadow");
+
+	document.getElementById("hob").style='display:none';
+	document.getElementById("hobOpen").src='menu/hobClose.png';
+	document.getElementById("hobOpen").removeAttribute("style", "box-shadow");
+	},false);
+
+	// Bouton projPerso
+	document.getElementById("liNav5").addEventListener("click",function(){
+	document.getElementById("profil").style='display:none';
+	document.getElementById("photoMin").src='menu/profilClose.png';
+	document.getElementById("photoMin").removeAttribute("style", "box-shadow");
+
+	document.getElementById("profilOpen").src='menu/profilClose.png';
+	document.getElementById("profilOpen").removeAttribute("style", "box-shadow");
+
+	document.getElementById("expPro").style='display:none';
+	document.getElementById("expProOpen").src='menu/expProClose.png';
+	document.getElementById("expProOpen").removeAttribute("style", "box-shadow");
+
+	document.getElementById("formPro").style='display:none';
+	document.getElementById("formProOpen").src='menu/formProClose.png';
+	document.getElementById("formProOpen").removeAttribute("style", "box-shadow");
+
+	document.getElementById("comp").style='display:none';
+	document.getElementById("compOpen").src='menu/compClose.png';
+	document.getElementById("compOpen").removeAttribute("style", "box-shadow");
+
+	document.getElementById("projPerso").style='display:block';
+	document.getElementById("projPersoOpen").src='menu/projPersoOpen.png';
+	document.getElementById("projPersoOpen").style='box-shadow: 0px 0px 30px black';
+
+	document.getElementById("hob").style='display:none';
+	document.getElementById("hobOpen").src='menu/hobClose.png';
+	document.getElementById("hobOpen").removeAttribute("style", "box-shadow");
+	},false);
+
+
+	// Bouton hob
+	document.getElementById("liNav6").addEventListener("click",function(){
+	document.getElementById("profil").style='display:none';
+	document.getElementById("photoMin").src='menu/profilClose.png';
+	document.getElementById("photoMin").removeAttribute("style", "box-shadow");
+
+	document.getElementById("profilOpen").src='menu/profilClose.png';
+	document.getElementById("profilOpen").removeAttribute("style", "box-shadow");
+
+	document.getElementById("expPro").style='display:none';
+	document.getElementById("expProOpen").src='menu/expProClose.png';
+	document.getElementById("expProOpen").removeAttribute("style", "box-shadow");
+
+	document.getElementById("formPro").style='display:none';
+	document.getElementById("formProOpen").src='menu/formProClose.png';
+	document.getElementById("formProOpen").removeAttribute("style", "box-shadow");
+
+	document.getElementById("comp").style='display:none';
+	document.getElementById("compOpen").src='menu/compClose.png';
+	document.getElementById("compOpen").removeAttribute("style", "box-shadow");
+
+	document.getElementById("projPerso").style='display:none';
+	document.getElementById("projPersoOpen").src='menu/projPersoClose.png';
+	document.getElementById("projPersoOpen").removeAttribute("style", "box-shadow");
+
+	document.getElementById("hob").style='display:block';
+	document.getElementById("hobOpen").src='menu/hobOpen.png';
+	document.getElementById("hobOpen").style='box-shadow: 0px 0px 30px black';
+
+	},false);
+</script>
+
+<!-- Partie Hobbies -->
+<script>
+	document.getElementById("liHob1").addEventListener("mouseout",function(){
+	document.getElementById("imageGif").src='gif/image.jpeg';
+    },false);
+    document.getElementById("liHob1").addEventListener("mouseover",function(){
+    document.getElementById("imageGif").src='gif/musique.gif';
+    },false);
+
+    document.getElementById("liHob2").addEventListener("mouseout",function(){
+	document.getElementById("imageGif").src='gif/image.jpeg';
+    },false);
+    document.getElementById("liHob2").addEventListener("mouseover",function(){
+    document.getElementById("imageGif").src='gif/vtt.gif';
+    },false);
+
+    document.getElementById("liHob3").addEventListener("mouseout",function(){
+	document.getElementById("imageGif").src='gif/image.jpeg';
+    },false);
+    document.getElementById("liHob3").addEventListener("mouseover",function(){
+    document.getElementById("imageGif").src='gif/voyage.gif';
+    },false);
+
+    document.getElementById("liHob4").addEventListener("mouseout",function(){
+	document.getElementById("imageGif").src='gif/image.jpeg';
+    },false);
+    document.getElementById("liHob4").addEventListener("mouseover",function(){
+    document.getElementById("imageGif").src='gif/rando.gif';
+    },false);
+
+    document.getElementById("liHob5").addEventListener("mouseout",function(){
+	document.getElementById("imageGif").src='gif/image.jpeg';
+    },false);
+    document.getElementById("liHob5").addEventListener("mouseover",function(){
+    document.getElementById("imageGif").src='gif/lecture.gif';
+    },false);
+
+    document.getElementById("liHob6").addEventListener("mouseout",function(){
+	document.getElementById("imageGif").src='gif/image.jpeg';
+    },false);
+    document.getElementById("liHob6").addEventListener("mouseover",function(){
+    document.getElementById("imageGif").src='gif/zen.gif';
+    },false);
+
+</script>
+
+</body>
+</html>
