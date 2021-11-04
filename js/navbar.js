@@ -26,7 +26,7 @@ function closePage(page) {
 	return false; 
 }
 
-// Variables et prevoir une fonction avec un queryselector sur le onclick et les actions a faire sur les boutons
+// Variables
 let liNav0 = document.getElementById("liNav0");
 let liNav1 = document.getElementById("liNav1");
 let liNav2 = document.getElementById("liNav2");
@@ -50,6 +50,8 @@ let compOpen = document.getElementById("compOpen");
 let projPersoOpen = document.getElementById("projPersoOpen");
 let hobOpen = document.getElementById("hobOpen");
 
+
+// Faire une fonction pour la gestion de tout les boutons
 // Bouton profil MIN
 liNav0.addEventListener("click",function(){
 	profil.style='display:block';
@@ -79,29 +81,29 @@ liNav0.addEventListener("click",function(){
 
 // Bouton profil MAX
 liNav1.addEventListener("click",function(){
-	document.getElementById("profil").style='display:block';
-	document.getElementById("profilOpen").src='assets/menu/profilOpen.png';
-	document.getElementById("profilOpen").style='box-shadow: 0px 0px 30px black';
+	profil.style='display:block';
+	profilOpen.src='assets/menu/profilOpen.png';
+	profilOpen.style='box-shadow: 0px 0px 30px black';
 
-	document.getElementById("expPro").style='display:none';
-	document.getElementById("expProOpen").src='assets/menu/expProClose.png';
-	document.getElementById("expProOpen").removeAttribute("style", "box-shadow");
+	expPro.style='display:none';
+	expProOpen.src='assets/menu/expProClose.png';
+	expProOpen.removeAttribute("style", "box-shadow");
 
-	document.getElementById("formPro").style='display:none';
-	document.getElementById("formProOpen").src='assets/menu/formProClose.png';
-	document.getElementById("formProOpen").removeAttribute("style", "box-shadow");
+	formPro.style='display:none';
+	formProOpen.src='assets/menu/formProClose.png';
+	formProOpen.removeAttribute("style", "box-shadow");
 
-	document.getElementById("comp").style='display:none';
-	document.getElementById("compOpen").src='assets/menu/compClose.png';
-	document.getElementById("compOpen").removeAttribute("style", "box-shadow");
+	comp.style='display:none';
+	compOpen.src='assets/menu/compClose.png';
+	compOpen.removeAttribute("style", "box-shadow");
 
-	document.getElementById("projPerso").style='display:none';
-	document.getElementById("projPersoOpen").src='assets/menu/projPersoClose.png';
-	document.getElementById("projPersoOpen").removeAttribute("style", "box-shadow");
+	projPerso.style='display:none';
+	projPersoOpen.src='assets/menu/projPersoClose.png';
+	projPersoOpen.removeAttribute("style", "box-shadow");
 
-	document.getElementById("hob").style='display:none';
-	document.getElementById("hobOpen").src='assets/menu/hobClose.png';
-	document.getElementById("hobOpen").removeAttribute("style", "box-shadow");
+	hob.style='display:none';
+	hobOpen.src='assets/menu/hobClose.png';
+	hobOpen.removeAttribute("style", "box-shadow");
 },false);
 
 // Bouton expPro
