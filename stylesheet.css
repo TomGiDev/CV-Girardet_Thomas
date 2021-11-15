@@ -1,16 +1,20 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: Times;
   z-index: 1;
 }
 
 main {
-  padding-top: 20px;
+  padding-top: 15px;
   padding-left: 5px;
   padding-right: 10px;
 }
 
 section {
-  background-color: rgb(223, 245, 255);
+  background-color: rgb(235, 248, 250);
   border-radius: 5px;
 }
 
@@ -32,8 +36,8 @@ section {
 /* LISERET ET MENU */
 .liseret {
   background: radial-gradient(#92dfe9, #3342c9);
-  border: 1px solid black;
   width: 150px;
+  height: 100vh;
   position: fixed;
   top: 0px;
   left: 0px;
@@ -45,7 +49,6 @@ section {
   width: 50px;
   height: 50px;
   margin-left: 10px;
-  /* A revoir */
   box-shadow: 10px 5px 5px black;
 }
 
@@ -59,8 +62,7 @@ section {
 }
 
 .navBut:hover {
-  /* A revoir */
-  box-shadow: 0 0 12px black;
+  box-shadow: 0 0 12px 6px black;
 }
 
 .liNav {
@@ -89,7 +91,7 @@ section {
 /* SECTION PAR THEME */
 .sectionTitre {
   background: radial-gradient(#92dfe9, #061ace);
-  border: 1px solid black;
+  border-radius: 8px;
   color: white;
   padding-left: 20px;
 }
@@ -169,6 +171,7 @@ aside {
   border: 1px solid lightgrey;
   padding: 10px;
   text-align: center;
+  position: relative;
 }
 
 ol {
@@ -197,68 +200,24 @@ ol {
 
 .description {
   font-size: medium;
+  text-align: left;
 }
 
-/* Ajouter ici un margin: 0 auto; et un transform: translateX(-50%);*/
+.expProAnnee,
+.formProAnnee {
+  position: relative;
+}
+
 .annee {
+  width: 80%;
+  position: absolute;
+  align-items: center;
+  top: 50%;
+  left: 50%;
   font-size: medium;
   font-weight: bold;
   color: darkblue;
-  transform: translateY(25%);
-}
-
-/* PARTIE A SUPPRIMER */
-/* Centrer les années */
-#expProVide1 {
-  height: 55px;
-}
-
-#expProVide2 {
-  height: 32px;
-}
-
-#expProVide3 {
-  height: 45px;
-}
-
-#expProVide4 {
-  height: 7px;
-}
-
-#expProVide5 {
-  height: 7px;
-}
-
-#expProVide6 {
-  height: 10px;
-}
-
-#expProVide7 {
-  height: 6px;
-}
-
-#expProVide8 {
-  height: 6px;
-}
-
-#formProVide1 {
-  height: 2px;
-}
-
-#formProVide2 {
-  height: 2px;
-}
-
-#formProVide3 {
-  height: 2px;
-}
-
-#formProVide4 {
-  height: 2px;
-}
-
-#formProVide5 {
-  height: 2px;
+  transform: translateX(-50%) translateY(-50%);
 }
 
 /* Partie du aside avec affichage du gif */
@@ -305,6 +264,22 @@ footer {
   max-height: 10px;
   max-width: 10px;
 }
+
+/* Taille écran laptop */
+@media screen and (max-width: 1280px) {
+  #profilOpen,
+  #expProOpen,
+  #formProOpen,
+  #compOpen,
+  #projPersoOpen,
+  #hobOpen {
+    margin-top: 40px;
+  }
+
+  .navBut {
+    width: 40px;
+    height: 40px;
+  }
 
 /* Taille écran tablette */
 @media screen and (max-width: 1024px) {

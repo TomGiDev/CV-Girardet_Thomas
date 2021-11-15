@@ -43,7 +43,7 @@ let hobOpen = document.getElementById("hobOpen");
 liNav0.addEventListener("click",function(){
 	profil.style='display:block';
 	photoMin.src='assets/profil.jpg';
-	photoMin.style='box-shadow: 0px 0px 30px black';
+	photoMin.style='box-shadow: 0px 0px 5px 2px black';
 
 	expPro.style='display:none';
 	expProOpen.src='assets/menu/expProClose.png';
@@ -70,7 +70,7 @@ liNav0.addEventListener("click",function(){
 liNav1.addEventListener("click",function(){
 	profil.style='display:block';
 	profilOpen.src='assets/menu/profilOpen.png';
-	profilOpen.style='box-shadow: 0px 0px 30px black';
+	profilOpen.style='box-shadow: 0px 0px 5px 4px black';
 
 	expPro.style='display:none';
 	expProOpen.src='assets/menu/expProClose.png';
@@ -104,7 +104,7 @@ liNav2.addEventListener("click",function(){
 
 	document.getElementById("expPro").style='display:block';
 	document.getElementById("expProOpen").src='assets/menu/expProOpen.png';
-	document.getElementById("expProOpen").style='box-shadow: 0px 0px 30px black';
+	document.getElementById("expProOpen").style='box-shadow: 0px 0px 5px 4px black';
 
 	document.getElementById("formPro").style='display:none';
 	document.getElementById("formProOpen").src='assets/menu/formProClose.png';
@@ -138,7 +138,7 @@ liNav3.addEventListener("click",function(){
 
 	document.getElementById("formPro").style='display:block';
 	document.getElementById("formProOpen").src='assets/menu/formProOpen.png';
-	document.getElementById("formProOpen").style='box-shadow: 0px 0px 30px black';
+	document.getElementById("formProOpen").style='box-shadow: 0px 0px 5px 4px black';
 
 	document.getElementById("comp").style='display:none';
 	document.getElementById("compOpen").src='assets/menu/compClose.png';
@@ -172,7 +172,7 @@ liNav4.addEventListener("click",function(){
 
 	document.getElementById("comp").style='display:block';
 	document.getElementById("compOpen").src='assets/menu/compOpen.png';
-	document.getElementById("compOpen").style='box-shadow: 0px 0px 30px black';
+	document.getElementById("compOpen").style='box-shadow: 0px 0px 5px 4px black';
 
 	document.getElementById("projPerso").style='display:none';
 	document.getElementById("projPersoOpen").src='assets/menu/projPersoClose.png';
@@ -206,7 +206,7 @@ liNav5.addEventListener("click",function(){
 
 	document.getElementById("projPerso").style='display:block';
 	document.getElementById("projPersoOpen").src='assets/menu/projPersoOpen.png';
-	document.getElementById("projPersoOpen").style='box-shadow: 0px 0px 30px black';
+	document.getElementById("projPersoOpen").style='box-shadow: 0px 0px 5px 4px black';
 
 	document.getElementById("hob").style='display:none';
 	document.getElementById("hobOpen").src='assets/menu/hobClose.png';
@@ -241,6 +241,6 @@ liNav6.addEventListener("click",function(){
 
 	document.getElementById("hob").style='display:block';
 	document.getElementById("hobOpen").src='assets/menu/hobOpen.png';
-	document.getElementById("hobOpen").style='box-shadow: 0px 0px 30px black';
+	document.getElementById("hobOpen").style='box-shadow: 0px 0px 5px 4px black';
 
 },false);
