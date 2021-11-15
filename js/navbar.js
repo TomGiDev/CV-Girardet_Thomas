@@ -12,19 +12,6 @@ function openPage(page) {
 	return false; 
 }
 
-// ANIMATION DES SECTIONS POUR FERMETURE
-function closePage(page) {
-	// suppression class open à toutes les sections de main remplacée par la classe close
-	var allsections = document.querySelectorAll("main > section");
-	for (var i = 0; i < allsections.length; ++i) { 
-		allsections[i].classList.remove('close');
-		allsections[i].classList.add('open');
-	}
-	// ajout de la classe close à la page
-	document.getElementById(page).classList.add('close');
-	document.getElementById(page).classList.remove('open');
-	return false; 
-}
 
 // Variables
 let liNav0 = document.getElementById("liNav0");
