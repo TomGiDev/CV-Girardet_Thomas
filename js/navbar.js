@@ -37,6 +37,7 @@ let hobOpen = document.getElementById("hobOpen");
 
 
 // Faire une fonction pour la gestion de tout les boutons
+// faire un toggle pour chaque action un click = ajout ombre differente, changement icone, changement du display
 
 // Bouton profil MIN
 liNav0.addEventListener("click", () => {
